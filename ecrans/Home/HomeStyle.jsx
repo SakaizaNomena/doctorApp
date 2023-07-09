@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import constantes from '../../outils/constantes'
+import constantes, { COLORS } from '../../outils/constantes'
 
 const HomeStyle = StyleSheet.create({
     header: {
@@ -28,11 +28,11 @@ const HomeStyle = StyleSheet.create({
         paddingVertical: PADDING.vertical
     },   
     symptomeTitle: {
-        marginVertical: PADDING.vertical,
+        paddingVertical: PADDING.vertical,
         paddingHorizontal: PADDING.horizontal
     },
     title_space_between: {
-        marginVertical: PADDING.vertical,
+        paddingVertical: PADDING.vertical,
         paddingHorizontal: PADDING.horizontal,
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -40,6 +40,41 @@ const HomeStyle = StyleSheet.create({
     },
     link: {
         color: 'blue'
+    },
+    doctorsContainer: {
+        paddingVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal,
+    },
+    doctorCard: {
+        paddingVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal,
+        marginBottom: 20,
+        backgroundColor: '#fff',
+        flex: 1,
+        flexDirection: 'row',
+        elevation: 2, //MITOVY AMIN'NY HOE BOX SHADOW
+        borderRadius: 5
+    },
+    doctorImg: {
+        width: 70,
+        height: 70,
+        borderRadius: 70 / 2,
+        marginRight: 15
+    },
+    doctorInfo: {
+        flexDirection: 'column'
+    },
+    doctorName: {
+        fontWeight: 'bold',
+        fontSize: 16,
+        marginBottom: 10
+    },
+    doctorSpeciality: {
+        backgroundColor: COLORS.main,
+        paddingVertical: 5,
+        paddingHorizontal: 5,
+        borderRadius: 15,
+        color: '#fff'
     }
 })
 

@@ -5,6 +5,7 @@ import { FakeActivity } from '../../fakeData/fakeActivity';
 import ActivityItem from '../../composantes/activityItems';
 import { FakeSymptome } from '../../composantes/SymptomeItem/FakeSymptome';
 import SymptomeItem from '../../composantes/SymptomeItem';
+import { FakeDoctor } from '../../composantes/doctorItems/FakeDoctor';
 
 const Home = () => {
   return (
@@ -59,7 +60,21 @@ const Home = () => {
             </TouchableOpacity>
         </View>
         {/* Doctor lists */}
-
+        <View style={HomeStyle.doctorsContainer}>
+            {
+                FakeDoctor.splice(0, 3).map((doctor, index) => {
+                    return(
+                        <TouchableOpacity key={doctor.id} style={HomeStyle.doctorCard}>
+                            <Image source={{uri: `${doctor.img}`}} style={HomeStyle.doctorImg} />
+                            <View style={HomeStyle.doctorInfo}>
+                                <Text style={HomeStyle.doctorName}>{doctor.fullName}</Text>
+                                <Text style={HomeStyle.doctorSpeciality}>{doctor.speciality}</Text>
+                            </View>
+                        </TouchableOpacity>
+                    )
+                })
+            }
+        </View>
         {/* Fin doctor lists */}
     </ScrollView>
   )
