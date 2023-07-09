@@ -4,6 +4,7 @@ import Messages from '../../ecrans/Messages'
 import MessageStyles from './MessageStyle'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
+import { COLORS } from '../../outils/constantes'
 dayjs.extend(relativeTime)
 const Message = ({item}) => {
     const isMine = ()=> {
@@ -12,11 +13,11 @@ const Message = ({item}) => {
   return (
     <View style={[MessageStyles.container, 
         {
-            backgroundColor: isMine() ? '#DCF8C5' : '#fff',
+            backgroundColor: isMine() ? COLORS.main : '#fff',
             alignSelf: isMine() ? 'flex-end' : 'flex-start'
         }]}>
-      <Text>{item.message}</Text>
-      <Text>{dayjs(item.createdAt).fromNow(true)}</Text>
+      <Text style={{color: isMine() ? '#fff': 'null'}}>{item.message}</Text>
+      <Text style={{color: isMine() ? '#ffA2D0': 'null'}}>{dayjs(item.createdAt).fromNow(true)}</Text>
     </View>
   )
 }

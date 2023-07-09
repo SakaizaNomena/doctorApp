@@ -1,5 +1,5 @@
 export const COLORS = {
-    main: '#695cd4',
+    main: 'blue',
     grey: '#f4f6a',
     black: '#000',
     iconColor: '#eaebef'
