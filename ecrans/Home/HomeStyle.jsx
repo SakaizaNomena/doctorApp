@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import constantes, { COLORS } from '../../outils/constantes'
+import { COLORS } from '../../outils/constantes'
 
 const HomeStyle = StyleSheet.create({
     header: {

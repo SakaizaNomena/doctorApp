@@ -33,7 +33,7 @@ const BottomTabs = () => {
               tabBarIcon: ({ color, size }) => (
                 <MaterialCommunityIcons name="chat" color={color} size={size} />
               ),
-              tabBarBadge: 3,
+              // tabBarBadge: 3,
             }}
           />
           <Tab.Screen

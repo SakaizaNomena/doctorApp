@@ -1,6 +1,5 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { Text, TouchableOpacity } from 'react-native'
 import React from 'react'
-import HomeStyle from '../../ecrans/Home/HomeStyle'
 import HospitalSVG from '../../assets/hospital/undraw_medicine_b-1-ol.svg'
 import { ActivityItemStyle } from './activityItemStyle'
 

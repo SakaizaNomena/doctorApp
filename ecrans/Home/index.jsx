@@ -3,9 +3,9 @@ import React from 'react'
 import HomeStyle from './HomeStyle';
 import { FakeActivity } from '../../fakeData/fakeActivity';
 import ActivityItem from '../../composantes/activityItems';
-import { FakeSymptome } from '../../composantes/SymptomeItem/FakeSymptome';
+import { FakeSymptome } from '../../fakeData/FakeSymptome';
 import SymptomeItem from '../../composantes/SymptomeItem';
-import { FakeDoctor } from '../../composantes/doctorItems/FakeDoctor';
+import { FakeDoctor } from '../../fakeData/FakeDoctor';
 
 const Home = () => {
   return (

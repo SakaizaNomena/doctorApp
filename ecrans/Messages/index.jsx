@@ -1,11 +1,18 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { FlatList, Text, View } from 'react-native'
+import FakeChats from '../../fakeData/FakeChats'
+import ChatLists from '../../composantes/chatLists'
 
 const Messages = () => {
   return (
-    <View>
-      <Text>Messages</Text>
-    </View>
+    <FlatList 
+        data={FakeChats}
+        keyExtractor={item => item.id}
+        showsVerticalScrollIndicator={false}
+        renderItem={({item}) => {
+          return <ChatLists item={item} />
+        }}    
+    />
   )
 }
 
