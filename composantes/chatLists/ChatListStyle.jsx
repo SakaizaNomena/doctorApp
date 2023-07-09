@@ -21,12 +21,16 @@ const ChatListStyle = StyleSheet.create({
     chatName: {
         fontWeight: 'bold'
     },
+    chatDate: {
+        fontSize: 11,
+        color: 'green'
+    },
     last_msg: {
         fontSize: 13
     },
     date_name: {
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        
     }
 })
 
