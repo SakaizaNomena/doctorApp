@@ -27,6 +27,20 @@ const HomeStyle = StyleSheet.create({
         paddingHorizontal: PADDING.horizontal,
         paddingVertical: PADDING.vertical
     },   
+    symptomeTitle: {
+        marginVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal
+    },
+    title_space_between: {
+        marginVertical: PADDING.vertical,
+        paddingHorizontal: PADDING.horizontal,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 15
+    },
+    link: {
+        color: 'blue'
+    }
 })
 
 export default HomeStyle

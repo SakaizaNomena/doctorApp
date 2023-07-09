@@ -6,6 +6,7 @@ export const ActivityItemStyle = StyleSheet.create({
         paddingVertical: 15,
         marginRight: 15,
         elevation: 1,
+        borderRadius: 5,
         flexDirection: 'column'
    },
     mainText: {

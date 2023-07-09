@@ -7,13 +7,13 @@ import { ActivityItemStyle } from './activityItemStyle'
 const ActivityItem = ({item}) => {
   return (
         <TouchableOpacity style={ActivityItemStyle.scrollableItem}>
-        <HospitalSVG width={50} height={50} />
-        <Text style={ActivityItemStyle.mainText}>
-            {item.mainText}
-        </Text>
-        <Text style={ActivityItemStyle.subText}>
-            {item.subText}
-        </Text>
+            <HospitalSVG width={50} height={50} />
+            <Text style={ActivityItemStyle.mainText}>
+                {item.mainText}
+            </Text>
+            <Text style={ActivityItemStyle.subText}>
+                {item.subText}
+            </Text>
        </TouchableOpacity>
   )
 }
