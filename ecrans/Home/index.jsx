@@ -1,7 +1,8 @@
-import { View, Text, StyleSheet, ScrollView, Image, FlatList } from 'react-native'
+import { View, Text, ScrollView, Image, FlatList, TouchableOpacity } from 'react-native'
 import React from 'react'
 import HomeStyle from './HomeStyle';
 import { FakeActivity } from '../../fakeData/fakeActivity';
+import ActivityItem from '../../composantes/activityItems';
 
 const Home = () => {
   return (
@@ -15,13 +16,14 @@ const Home = () => {
         </View>
         {/* fin de header */}
         {/* LIst des activites */}
-        <FlatList data={FakeActivity} keyExtractor={item => item.id} renderItem={({item}) => {
+        <FlatList
+            data={FakeActivity}
+            showsHorizontalScrollIndicator={false} 
+            style={HomeStyle.scrollableList}
+            keyExtractor={item => item.id} 
+            renderItem={({item}) => {
             return(
-                <View>
-                    <Text>
-                        {item.mainText}
-                    </Text>
-                </View>
+                <ActivityItem item={item} />
             )
         }} horizontal={true} />
 

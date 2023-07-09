@@ -21,7 +21,12 @@ const HomeStyle = StyleSheet.create({
     userName: {
         fontSize: 18,
         color: '#37373B'
-    }
+    },
+    //stiliser le flatlist
+    scrollableList: {
+        paddingHorizontal: PADDING.horizontal,
+        paddingVertical: PADDING.vertical
+    },   
 })
 
 export default HomeStyle
