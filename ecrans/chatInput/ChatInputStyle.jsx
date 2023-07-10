@@ -17,7 +17,6 @@ const ChatInputStyle = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical: 15,
         alignItems: 'center',
-        color: '#fff'
     }
 })
 
